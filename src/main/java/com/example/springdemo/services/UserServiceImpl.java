@@ -74,14 +74,19 @@ public class UserServiceImpl implements UserService {
     public void deleteCustomerById(Long id) {
 
     }
-
+    /*
+        When using lazy loading for entity relationships, the value of the join attribute must be set manually and
+        the join attribute must be flagged as nullable.
+        In order to set the join attribute value, we need to set the join attribute user_id to the value
+        of the user entity id.
+        After that we need to save the user entity once more to make the data persistent.
+     */
     private UserDTO saveAndReturnDTO(User user) {
         User savedUser = userRepository.save(user);
-
-        UserDTO returnDto = userMapper.userToUserDTO(savedUser);
-
+        savedUser.getUserInfo().setUser(savedUser);
+        User userWithUserInfo = userRepository.save(savedUser);
+        UserDTO returnDto = userMapper.userToUserDTO(userWithUserInfo);
         returnDto.setUserUrl(getUserUrl(savedUser.getId()));
-
         return returnDto;
     }
 

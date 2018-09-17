@@ -1,5 +1,6 @@
 package com.example.springdemo.api.v1.model;
 
+import com.example.springdemo.domain.UserInfo;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,4 +15,10 @@ public class UserDTO {
 
     @JsonProperty("user_url")
     private String userUrl;
+
+    private String name;
+
+    private String surname;
+
+    private String telephone;
 }
