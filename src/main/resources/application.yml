@@ -1,0 +1,27 @@
+server:
+  servlet:
+#    context-path: /api
+     context-path: /
+---
+spring:
+  profiles: development
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database: mysql
+  datasource:
+    url: jdbc:mysql://localhost/${DB_NAME}?useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+server:
+  port: 5050
+
+---
+spring:
+  profiles: production
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database: mysql
+server:
+  port: 8081
