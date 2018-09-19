@@ -1,7 +1,8 @@
 package com.example.springdemo.controllers.v1;
 
 import com.example.springdemo.api.v1.model.UserDTO;
-import com.example.springdemo.services.UserService;
+import com.example.springdemo.api.v1.model.UserWithInfoDTO;
+import com.example.springdemo.persistence.services.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,8 +21,8 @@ public class UserController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public UserDTO createNewUser(@RequestBody UserDTO customerDTO){
-        return userService.createNewUser(customerDTO);
+    public UserWithInfoDTO createNewUser(@RequestBody UserWithInfoDTO userWithInfoDTO){
+        return userService.createNewUser(userWithInfoDTO);
     }
 
     @GetMapping("/{id}")

@@ -1,4 +1,4 @@
-package com.example.springdemo.services;
+package com.example.springdemo.persistence.services;
 
 public class ResourceNotFoundException extends RuntimeException {
 

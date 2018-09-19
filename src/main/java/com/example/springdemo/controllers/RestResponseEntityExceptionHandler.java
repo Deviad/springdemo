@@ -1,6 +1,6 @@
 package com.example.springdemo.controllers;
 
-import com.example.springdemo.services.ResourceNotFoundException;
+import com.example.springdemo.persistence.services.ResourceNotFoundException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
