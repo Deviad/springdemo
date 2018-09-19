@@ -27,13 +27,13 @@ public class UserController {
 
     @GetMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public UserDTO getUserById(@PathVariable Long id) {
+    public UserWithInfoDTO getUserById(@PathVariable Long id) {
         return userService.getUserById(id);
     }
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
-    public List<UserDTO> getAllUsers(@RequestParam Optional<Integer> offset, @RequestParam Optional<Integer> limit) {
+    public List<UserWithInfoDTO> getAllUsers(@RequestParam Optional<Integer> offset, @RequestParam Optional<Integer> limit) {
         return userService.getAllUsers(offset, limit);
     }
 }

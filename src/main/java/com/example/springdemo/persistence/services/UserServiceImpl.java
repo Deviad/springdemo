@@ -29,7 +29,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<UserDTO> getAllUsers(Optional<Integer> offset, Optional<Integer> limit) {
+    public List<UserWithInfoDTO> getAllUsers(Optional<Integer> offset, Optional<Integer> limit) {
         /*
             We either want to use pagination feature or not using it at all.
          */
@@ -39,40 +39,40 @@ public class UserServiceImpl implements UserService {
             return userRepository.findAll()
                     .stream()
                     .map(user -> {
-                        UserDTO userDTO = userMapper.userToUserDTO(user);
-                        userDTO.setUserUrl(getUserUrl(user.getId()));
-                        return userDTO;
+                        UserWithInfoDTO userWithInfoDTO = userMapper.userToUserWithinfoDTO(user);
+                        userWithInfoDTO.setUserUrl(getUserUrl(user.getId()));
+                        return userWithInfoDTO;
                     })
                     .collect(Collectors.toList());
         }
         return userRepository.findAllUsersWithLimit(PageRequest.of(offset.orElse(0), limit.orElse(10)))
                 .stream()
                 .map(user -> {
-                    UserDTO userDTO = userMapper.userToUserDTO(user);
-                    userDTO.setUserUrl(getUserUrl(user.getId()));
-                    return userDTO;
+                    UserWithInfoDTO userWithInfoDTO = userMapper.userToUserWithinfoDTO(user);
+                    userWithInfoDTO.setUserUrl(getUserUrl(user.getId()));
+                    return userWithInfoDTO;
                 })
                 .collect(Collectors.toList());
     }
 
     @Override
-    public UserDTO getUserById(Long id) {
+    public UserWithInfoDTO getUserById(Long id) {
         return userRepository.findById(id)
-                .map(userMapper::userToUserDTO)
-                .map(userDTO -> {
-                    userDTO.setUserUrl(getUserUrl(id));
-                    return userDTO;
+                .map(userMapper::userToUserWithinfoDTO)
+                .map(userWithInfoDTO -> {
+                    userWithInfoDTO.setUserUrl(getUserUrl(id));
+                    return userWithInfoDTO;
                 }).orElseThrow(ResourceNotFoundException::new);
     }
 
     @Override
-    public UserDTO getUserByUsername(String username) {
+    public UserWithInfoDTO getUserByUsername(String username) {
         return Optional.of(userRepository.findUserByUsername(username))
             .map(user -> {
                 Long id = user.getId();
-                UserDTO userDTO = userMapper.userToUserDTO(user);
-                userDTO.setUserUrl(getUserUrl(id));
-                return userDTO;
+                UserWithInfoDTO userWithInfoDTO = userMapper.userToUserWithinfoDTO(user);
+                userWithInfoDTO.setUserUrl(getUserUrl(id));
+                return userWithInfoDTO;
             })
             .orElseThrow(ResourceNotFoundException::new);
     }
