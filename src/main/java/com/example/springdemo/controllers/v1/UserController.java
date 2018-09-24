@@ -1,7 +1,8 @@
 package com.example.springdemo.controllers.v1;
 
 import com.example.springdemo.api.v1.model.UserDTO;
-import com.example.springdemo.services.UserService;
+import com.example.springdemo.api.v1.model.UserWithInfoDTO;
+import com.example.springdemo.persistence.services.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,19 +21,19 @@ public class UserController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public UserDTO createNewUser(@RequestBody UserDTO customerDTO){
-        return userService.createNewUser(customerDTO);
+    public UserWithInfoDTO createNewUser(@RequestBody UserWithInfoDTO userWithInfoDTO){
+        return userService.createNewUser(userWithInfoDTO);
     }
 
     @GetMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public UserDTO getUserById(@PathVariable Long id) {
+    public UserWithInfoDTO getUserById(@PathVariable Long id) {
         return userService.getUserById(id);
     }
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
-    public List<UserDTO> getAllUsers(@RequestParam Optional<Integer> offset, @RequestParam Optional<Integer> limit) {
+    public List<UserWithInfoDTO> getAllUsers(@RequestParam Optional<Integer> offset, @RequestParam Optional<Integer> limit) {
         return userService.getAllUsers(offset, limit);
     }
 }
