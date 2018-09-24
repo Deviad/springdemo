@@ -9,6 +9,7 @@ import com.example.springdemo.persistence.domain.UserInfo;
 import com.example.springdemo.persistence.repositories.UserInfoRepository;
 import com.example.springdemo.persistence.repositories.UserRepository;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -45,7 +46,7 @@ public class UserServiceImpl implements UserService {
                     })
                     .collect(Collectors.toList());
         }
-        return userRepository.findAllUsersWithLimit(PageRequest.of(offset.orElse(0), limit.orElse(10)))
+        return userRepository.findAllUsersWithLimit(PageRequest.of(offset.orElse(0), limit.orElse(10), new Sort(Sort.Direction.ASC, "username")))
                 .stream()
                 .map(user -> {
                     UserWithInfoDTO userWithInfoDTO = userMapper.userToUserWithinfoDTO(user);

@@ -1,5 +1,7 @@
-package com.example.springdemo.security;
+package com.example.springdemo.configs;
 
+import com.example.springdemo.security.CustomMethodSecurityExpressionHandler;
+import com.example.springdemo.security.CustomPermissionEvaluator;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.access.expression.method.MethodSecurityExpressionHandler;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
@@ -8,7 +10,6 @@ import org.springframework.security.config.annotation.method.configuration.Globa
 @Configuration
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class MethodSecurityConfig extends GlobalMethodSecurityConfiguration {
-
     @Override
     protected MethodSecurityExpressionHandler createExpressionHandler() {
         // final DefaultMethodSecurityExpressionHandler expressionHandler = new DefaultMethodSecurityExpressionHandler();

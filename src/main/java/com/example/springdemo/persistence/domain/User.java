@@ -3,8 +3,8 @@ package com.example.springdemo.persistence.domain;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.Collection;
 import java.util.HashSet;
-import java.util.Set;
 
 @Data
 @Entity(name = "User")
@@ -14,21 +14,31 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
+    @Column(unique = true)
     private String username;
     private String password;
 
     @OneToOne
     private UserInfo userInfo;
-    @ManyToMany(
-            fetch = FetchType.EAGER,
-            cascade = {
-                CascadeType.MERGE
-            }
-    )
+//    @ManyToMany(
+//            fetch = FetchType.EAGER,
+//            cascade = {
+//                CascadeType.MERGE
+//            }
+//    )
+//    @JoinTable(
+//            name = "users_privileges",
+//            joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"),
+//            inverseJoinColumns = @JoinColumn(name = "privilege_id", referencedColumnName = "id")
+//    )
+//
+//    private Set<Privilege> privileges = new HashSet<>();
+    @ManyToMany(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE})
     @JoinTable(
-            name = "users_privileges",
-            joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"),
-            inverseJoinColumns = @JoinColumn(name = "privilege_id", referencedColumnName = "id")
-    )
-    private Set<Privilege> privileges = new HashSet<>();
+            name = "users_roles",
+            joinColumns = @JoinColumn(
+                    name = "user_id", referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(
+                    name = "role_id", referencedColumnName = "id"))
+    private Collection<Role> roles = new HashSet<>();
 }
