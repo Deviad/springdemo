@@ -6,8 +6,6 @@ import lombok.Data;
 import javax.persistence.*;
 import java.util.Collection;
 import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.Set;
 
 @Data
 @Entity(name = "Role")
