@@ -35,7 +35,6 @@ public class UserServiceImpl implements UserService {
             We either want to use pagination feature or not using it at all.
          */
 
-
         if (!offset.isPresent() && !limit.isPresent()) {
             return userRepository.findAll()
                     .stream()
@@ -46,6 +45,7 @@ public class UserServiceImpl implements UserService {
                     })
                     .collect(Collectors.toList());
         }
+
         return userRepository.findAllUsersWithLimit(PageRequest.of(offset.orElse(0), limit.orElse(10), new Sort(Sort.Direction.ASC, "username")))
                 .stream()
                 .map(user -> {
