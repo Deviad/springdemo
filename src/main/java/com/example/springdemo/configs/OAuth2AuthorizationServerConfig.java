@@ -1,12 +1,19 @@
 package com.example.springdemo.configs;
 
+import com.example.springdemo.security.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.autoconfigure.security.oauth2.resource.UserInfoRestTemplateFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.DependsOn;
 import org.springframework.context.annotation.Primary;
+import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.oauth2.client.DefaultOAuth2ClientContext;
+import org.springframework.security.oauth2.client.OAuth2RestTemplate;
+import org.springframework.security.oauth2.client.token.grant.password.ResourceOwnerPasswordResourceDetails;
 import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
@@ -19,10 +26,15 @@ import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
 import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 
+import java.nio.file.attribute.UserPrincipal;
 import java.util.Arrays;
+
+import static java.lang.String.format;
+import static org.codehaus.groovy.runtime.InvokerHelper.asList;
 
 @Configuration
 @EnableAuthorizationServer
+@DependsOn("authenticationManagerBean")
 public class OAuth2AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
     @Autowired
     @Qualifier("authenticationManagerBean")
@@ -31,6 +43,11 @@ public class OAuth2AuthorizationServerConfig extends AuthorizationServerConfigur
     @Autowired
     @Qualifier("encoder")
     private PasswordEncoder passwordEncoder;
+
+
+    @Autowired
+    private CustomUserDetailsService userDetailsService;
+
     @Override
     public void configure(final AuthorizationServerSecurityConfigurer oauthServer) throws Exception {
         oauthServer.tokenKeyAccess("permitAll()").checkTokenAccess("isAuthenticated()");
@@ -67,7 +84,11 @@ public class OAuth2AuthorizationServerConfig extends AuthorizationServerConfigur
     public void configure(final AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
         final TokenEnhancerChain tokenEnhancerChain = new TokenEnhancerChain();
         tokenEnhancerChain.setTokenEnhancers(Arrays.asList(tokenEnhancer(), accessTokenConverter()));
-        endpoints.tokenStore(tokenStore()).tokenEnhancer(tokenEnhancerChain).authenticationManager(authenticationManager);
+        endpoints
+        .tokenStore(tokenStore())
+        .tokenEnhancer(tokenEnhancerChain)
+        .authenticationManager(authenticationManager)
+        .userDetailsService(userDetailsService);
     }
 
     @Bean

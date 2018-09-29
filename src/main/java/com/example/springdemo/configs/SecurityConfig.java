@@ -3,9 +3,10 @@ package com.example.springdemo.configs;
 
 import com.example.springdemo.security.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.security.oauth2.resource.UserInfoRestTemplateFactory;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -15,6 +16,14 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.oauth2.client.DefaultOAuth2ClientContext;
+import org.springframework.security.oauth2.client.OAuth2RestTemplate;
+import org.springframework.security.oauth2.client.token.grant.password.ResourceOwnerPasswordResourceDetails;
+import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
+
+import java.util.Arrays;
+
+import static java.lang.String.format;
 
 //@Configuration
 //public class SecurityConfig  extends WebSecurityConfigurerAdapter {
@@ -26,7 +35,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 //}
 @Configuration
 @EnableWebSecurity
-@ComponentScan("com.example.springdemo.security")
+//@ComponentScan("com.example.springdemo.security")
+
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
@@ -45,10 +55,22 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(final HttpSecurity http) throws Exception {
         // @formatter:off
+//
+//        http.requestMatchers()
+//                .antMatchers("/login")
+//                .antMatchers("/api/**")
+//                .antMatchers("/admin")
+//                .and()
+//                .authorizeRequests()
+//                .anyRequest()
+//                .access("#oauth2.clientHasAnyRole('ADMIN')")
+//                .and().formLogin().permitAll()
+//                .and().csrf().disable();
+
         http.authorizeRequests()
                 .antMatchers("/login").permitAll()
                 .antMatchers("/api/**").permitAll()
-                .antMatchers("/admin").hasRole("ROLE_ADMIN")
+                .antMatchers("/admin").hasRole("ADMIN")
                 .anyRequest().authenticated()
                 .and().formLogin().permitAll()
                 .and().csrf().disable();

@@ -43,20 +43,20 @@ public class SetupData {
     }
 
     public void initUsers() {
-        Role adminRole = roleRepository.findAll().stream().filter(role-> role.getName().equals("ROLE_ADMIN")).findFirst().orElseThrow(EntityNotFoundException::new);
-        User user1 = new User();
-        user1.setUsername("pippo");
-        user1.setPassword(encoder.encode("123"));
-        user1.setRoles(new LinkedHashSet<>(Arrays.asList(adminRole)));
-        userRepository.save(user1);
-        UserInfo userInfo1 = new UserInfo();
-        userInfo1.setName("Davide");
-        userInfo1.setTelephone("00000");
-        userInfoRepository.save(userInfo1);
-        user1.setUserInfo(userInfo1);
-        userRepository.save(user1);
-
-
+        if(userRepository.findUserByUsername("pippo") == null) {
+            Role adminRole = roleRepository.findAll().stream().filter(role-> role.getName().equals("ROLE_ADMIN")).findFirst().orElseThrow(EntityNotFoundException::new);
+            User user1 = new User();
+            user1.setUsername("pippo");
+            user1.setPassword(encoder.encode("123"));
+            user1.setRoles(new LinkedHashSet<>(Arrays.asList(adminRole)));
+            userRepository.save(user1);
+            UserInfo userInfo1 = new UserInfo();
+            userInfo1.setName("Davide");
+            userInfo1.setTelephone("00000");
+            userInfoRepository.save(userInfo1);
+            user1.setUserInfo(userInfo1);
+            userRepository.save(user1);
+        }
 
 //        User user2 = new User();
 //        user2.setUsername("tom");

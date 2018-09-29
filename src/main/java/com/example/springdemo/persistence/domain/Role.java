@@ -2,6 +2,8 @@ package com.example.springdemo.persistence.domain;
 
 
 import lombok.Data;
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
 
 import javax.persistence.*;
 import java.util.Collection;
@@ -21,7 +23,8 @@ public class Role {
     @ManyToMany(mappedBy = "roles", fetch = FetchType.LAZY, cascade = {CascadeType.MERGE})
     private Collection<User> users;
 
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany
+    @LazyCollection(LazyCollectionOption.FALSE)
     @JoinTable(
             name = "roles_privileges",
             joinColumns = @JoinColumn(

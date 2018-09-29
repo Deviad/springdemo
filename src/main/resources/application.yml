@@ -16,8 +16,16 @@ spring:
     url: jdbc:mysql://localhost/${DB_NAME}?useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
+security:
+  oauth2:
+    client:
+      client-id: fooClientIdPassword
+      client-secret: secret
+      access-token-uri: http://localhost:8901/oauth/token
+    resource:
+      user-info-uri: http://localhost:8901/oauth/token
 server:
-  port: 5050
+  port: ${SERVER_PORT}
 
 ---
 spring:
@@ -27,4 +35,4 @@ spring:
       ddl-auto: none
     database: mysql
 server:
-  port: 8081
+  port: ${SERVER_PORT}
