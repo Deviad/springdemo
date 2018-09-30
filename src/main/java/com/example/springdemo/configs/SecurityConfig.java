@@ -3,8 +3,10 @@ package com.example.springdemo.configs;
 
 import com.example.springdemo.security.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.annotation.Order;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -16,6 +18,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
+@Order(SecurityProperties.DEFAULT_FILTER_ORDER-1)
+
 //@ComponentScan("com.example.springdemo.security")
 
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
@@ -35,26 +39,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(final HttpSecurity http) throws Exception {
-//
-//        http.requestMatchers()
-//                .antMatchers("/login")
-//                .antMatchers("/api/**")
-//                .antMatchers("/admin")
-//                .and()
-//                .authorizeRequests()
-//                .anyRequest()
-//                .access("#oauth2.clientHasAnyRole('ADMIN')")
-//                .and().formLogin().permitAll()
-//                .and().csrf().disable();
-
         http.authorizeRequests()
                 .antMatchers("/login/**").permitAll()
                 .antMatchers("/api/**").permitAll()
                 .antMatchers("/admin").hasRole("ADMIN")
-                .anyRequest().authenticated()
-                .and().formLogin().permitAll()
-                .and().csrf().and().httpBasic().disable()
-                ;
+                .and().formLogin()
+                .and().csrf().and().httpBasic().disable();
     }
 
     @Bean
