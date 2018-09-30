@@ -21,9 +21,9 @@ security:
     client:
       client-id: fooClientIdPassword
       client-secret: secret
-      access-token-uri: http://localhost:8901/oauth/token
+      access-token-uri: http://localhost:${SERVER_PORT}/oauth/token
     resource:
-      user-info-uri: http://localhost:8901/oauth/token
+      user-info-uri: http://localhost:${SERVER_PORT}/api/v1/users/me
 server:
   port: ${SERVER_PORT}
 

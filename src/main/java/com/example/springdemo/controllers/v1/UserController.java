@@ -2,15 +2,14 @@ package com.example.springdemo.controllers.v1;
 
 import com.example.springdemo.api.v1.model.UserWithInfoDTO;
 import com.example.springdemo.persistence.services.UserService;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.security.Principal;
+import java.util.*;
 
 @RestController
 @RequestMapping(UserController.BASE_URL)
@@ -24,7 +23,7 @@ public class UserController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public UserWithInfoDTO createNewUser(@RequestBody UserWithInfoDTO userWithInfoDTO){
+    public UserWithInfoDTO createNewUser(@RequestBody UserWithInfoDTO userWithInfoDTO) {
         return userService.createNewUser(userWithInfoDTO);
     }
 
@@ -40,7 +39,7 @@ public class UserController {
         return userService.getAllUsers(offset, limit);
     }
 
-    @GetMapping(value = { "/me" }, produces = "application/json")
+    @GetMapping(value = "/me", produces = "application/json")
     public Map<String, Object> user(OAuth2Authentication user) {
         Map<String, Object> userInfo = new HashMap<>();
         userInfo.put(

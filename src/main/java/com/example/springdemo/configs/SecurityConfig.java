@@ -16,7 +16,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
-@EnableWebSecurity
 //@ComponentScan("com.example.springdemo.security")
 
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
@@ -49,13 +48,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 //                .and().csrf().disable();
 
         http.authorizeRequests()
-                .antMatchers("/login").permitAll()
+                .antMatchers("/login/**").permitAll()
                 .antMatchers("/api/**").permitAll()
                 .antMatchers("/admin").hasRole("ADMIN")
                 .anyRequest().authenticated()
                 .and().formLogin().permitAll()
-                .and().csrf().disable();
-
+                .and().csrf().and().httpBasic().disable()
+                ;
     }
 
     @Bean

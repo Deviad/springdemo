@@ -23,7 +23,6 @@ import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 import java.util.Arrays;
 
 @Configuration
-@EnableAuthorizationServer
 @DependsOn("authenticationManagerBean")
 public class OAuth2AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
     @Autowired
