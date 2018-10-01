@@ -8,6 +8,7 @@ import org.springframework.boot.context.properties.NestedConfigurationProperty;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.annotation.Order;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.oauth2.client.OAuth2ClientContext;
 import org.springframework.security.oauth2.client.OAuth2RestTemplate;
@@ -56,7 +57,15 @@ public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter
         return new ClientResources();
     }
 
-    private Filter ssoFilter() {
+//    @Bean
+//    @ConfigurationProperties("security.oauth2.client")
+//    public ClientResources springdemo() {
+//        return new ClientResources();
+//    }
+
+
+    @Bean
+    public Filter ssoFilter() {
         CompositeFilter filter = new CompositeFilter();
         List<Filter> filters = new ArrayList<>();
         filters.add(ssoFilter(facebook(), "/login/facebook"));
