@@ -14,7 +14,7 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry
-                .addMapping("/api/**")
+                .addMapping("*")
                 .allowedOrigins("*")
                 .allowedMethods("*")
                 .maxAge(3600)
