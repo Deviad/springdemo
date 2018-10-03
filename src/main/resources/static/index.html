@@ -28,8 +28,11 @@
     </div>
 </div>
 <script type="text/javascript">
-		$.get({
-			url: "/oauth/authorize?client_id=barClientId&response_type=code&scope=read",
+		$.ajax({
+			url: "/oauth/token?client_id=testImplicitClientId&response_type=token",
+            type: "GET",
+            dataType: "json",
+			contentType: "application/x-www-form-urlencoded",
 			success: function (data, textStatus, xhr) {
 							// $("#user").html(data.properties);
                             console.dir(xhr);
