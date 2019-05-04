@@ -33,6 +33,12 @@ public class UserController {
         return userService.getUserById(id);
     }
 
+    @GetMapping("/username/{username}")
+    @ResponseStatus(HttpStatus.OK)
+    public UserWithInfoDTO getUserById(@PathVariable String username) {
+        return userService.getUserByUsername(username);
+    }
+
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public List<UserWithInfoDTO> getAllUsers(@RequestParam Optional<Integer> offset, @RequestParam Optional<Integer> limit) {

@@ -61,6 +61,7 @@ dependencies {
     compile('javax.activation:activation:1.1')
     compile('org.glassfish.jaxb:jaxb-runtime:2.3.0')
     runtime('mysql:mysql-connector-java')
+    runtime('org.mariadb.jdbc:mariadb-java-client:2.4.1')
     testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompile('org.springframework.security:spring-security-test')
 }
