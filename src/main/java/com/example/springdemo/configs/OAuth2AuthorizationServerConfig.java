@@ -3,6 +3,7 @@ package com.example.springdemo.configs;
 import com.example.springdemo.security.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.DependsOn;
@@ -23,6 +24,7 @@ import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 import java.util.Arrays;
 
 @Configuration
+@EnableAuthorizationServer
 @DependsOn("authenticationManagerBean")
 public class OAuth2AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
     @Autowired
@@ -55,11 +57,11 @@ public class OAuth2AuthorizationServerConfig extends AuthorizationServerConfigur
 
         clients.inMemory().withClient("sampleClientId").authorizedGrantTypes("implicit").scopes("read", "write", "foo", "bar").autoApprove(false).accessTokenValiditySeconds(3600).redirectUris("http://localhost:8083/")
 
-                .and().withClient("fooClientIdPassword").secret(passwordEncoder.encode("secret")).authorizedGrantTypes("password", "authorization_code", "refresh_token").scopes("foo", "read", "write").accessTokenValiditySeconds(3600).resourceIds()
+                .and().withClient(EnvironmentVariables.clientId).secret(passwordEncoder.encode(EnvironmentVariables.clientSecret)).authorizedGrantTypes("password", "authorization_code", "refresh_token").scopes("foo", "read", "write").accessTokenValiditySeconds(3600).resourceIds()
                 // 1 hour
                 .refreshTokenValiditySeconds(2592000)
                 // 30 days
-                .redirectUris("xxx","http://localhost:8089/")
+                .redirectUris("xxx","http://"+ EnvironmentVariables.appHostname+":8089/")
 
                 .and().withClient("barClientIdPassword").secret(passwordEncoder.encode("secret")).authorizedGrantTypes("password", "authorization_code", "refresh_token").scopes("bar", "read", "write").accessTokenValiditySeconds(3600)
                 // 1 hour
@@ -97,7 +99,7 @@ public class OAuth2AuthorizationServerConfig extends AuthorizationServerConfigur
     @Bean
     public JwtAccessTokenConverter accessTokenConverter() {
         final JwtAccessTokenConverter converter = new JwtAccessTokenConverter();
-        converter.setSigningKey("123");
+        converter.setSigningKey(EnvironmentVariables.jwtSigningKey);
         // final KeyStoreKeyFactory keyStoreKeyFactory = new KeyStoreKeyFactory(new ClassPathResource("mytest.jks"), "mypass".toCharArray());
         // converter.setKeyPair(keyStoreKeyFactory.getKeyPair("mytest"));
         return converter;

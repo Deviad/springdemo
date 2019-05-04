@@ -11,22 +11,22 @@ spring:
   jpa:
     hibernate:
 #      ddl-auto: update
-      ddl-auto: update
+      ddl-auto: ${DDL_AUTO}
     database: mysql
     show-sql: true
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
   datasource:
-    url: jdbc:mysql://db-service/${DB_NAME}?useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false
+    url: jdbc:mysql://${DB_HOSTNAME}/${DB_NAME}?useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
 security:
   oauth2:
     client:
-      client-id: fooClientIdPassword
-      client-secret: secret
-      access-token-uri: http://localhost:${SERVER_PORT}/oauth/token
+      client-id: ${CLIENT_ID}
+      client-secret: ${CLIENT_SECRET}
+      access-token-uri: http://${APP_HOSTNAME}:${SERVER_PORT}/oauth/token
     resource:
-      user-info-uri: http://localhost:${SERVER_PORT}/api/v1/users/me
+      user-info-uri: http://${APP_HOSTNAME}:${SERVER_PORT}/api/v1/users/me
 server:
   port: ${SERVER_PORT}
 
