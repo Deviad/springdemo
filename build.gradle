@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        springBootVersion = '2.1.0.M3'
+        springBootVersion = '2.1.4.RELEASE'
     }
     repositories {
         mavenCentral()
@@ -9,18 +9,20 @@ buildscript {
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-        classpath("org.hibernate:hibernate-gradle-plugin:5.3.6.Final")
+        classpath("org.hibernate:hibernate-gradle-plugin:5.4.2.Final")
     }
 }
 plugins {
     id "net.ltgt.apt" version "0.18"
+    id 'com.google.cloud.tools.jib' version '1.1.2'
 }
+jib.to.image='localhost:5000/simplicity-springdemo'
+jib.allowInsecureRegistries='true'
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 apply plugin: 'org.hibernate.orm'
-
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 8

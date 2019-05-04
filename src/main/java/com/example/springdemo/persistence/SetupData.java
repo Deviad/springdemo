@@ -8,34 +8,38 @@ import com.example.springdemo.persistence.repositories.PrivilegeRepository;
 import com.example.springdemo.persistence.repositories.RoleRepository;
 import com.example.springdemo.persistence.repositories.UserInfoRepository;
 import com.example.springdemo.persistence.repositories.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
-import org.springframework.transaction.annotation.Transactional;
 
-import javax.annotation.PostConstruct;
-import javax.persistence.EntityExistsException;
 import javax.persistence.EntityNotFoundException;
-import java.util.*;
+import javax.persistence.PostPersist;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 @Component
 public class SetupData {
-    @Autowired
-    private UserRepository userRepository;
 
-    @Autowired
-    private PrivilegeRepository privilegeRepository;
+    private final UserRepository userRepository;
+    private final PrivilegeRepository privilegeRepository;
+    private final RoleRepository roleRepository;
+    private final UserInfoRepository userInfoRepository;
+    private final PasswordEncoder encoder;
 
-    @Autowired
-    private RoleRepository roleRepository;
+    public SetupData(UserRepository userRepository,
+                     PrivilegeRepository privilegeRepository,
+                     RoleRepository roleRepository,
+                     UserInfoRepository userInfoRepository,
+                     PasswordEncoder encoder) {
+        this.userRepository = userRepository;
+        this.privilegeRepository = privilegeRepository;
+        this.roleRepository = roleRepository;
+        this.userInfoRepository = userInfoRepository;
+        this.encoder = encoder;
+    }
 
-    @Autowired
-    private UserInfoRepository userInfoRepository;
-
-    @Autowired
-    private PasswordEncoder encoder;
-
-    @PostConstruct
+    @PostPersist
     public void init() {
         initPrivileges();
         initRoles();
@@ -43,12 +47,12 @@ public class SetupData {
     }
 
     public void initUsers() {
-        if(userRepository.findUserByUsername("pippo") == null) {
-            Role adminRole = roleRepository.findAll().stream().filter(role-> role.getName().equals("ROLE_ADMIN")).findFirst().orElseThrow(EntityNotFoundException::new);
+        if (userRepository.findUserByUsername("pippo") == null) {
+            Role adminRole = roleRepository.findAll().stream().filter(role -> role.getName().equals("ROLE_ADMIN")).findFirst().orElseThrow(EntityNotFoundException::new);
             User user1 = new User();
             user1.setUsername("pippo");
             user1.setPassword(encoder.encode("123"));
-            user1.setRoles(new LinkedHashSet<>(Arrays.asList(adminRole)));
+            user1.setRoles(new LinkedHashSet<>(Collections.singleton(adminRole)));
             userRepository.save(user1);
             UserInfo userInfo1 = new UserInfo();
             userInfo1.setName("Davide");
@@ -57,6 +61,20 @@ public class SetupData {
             user1.setUserInfo(userInfo1);
             userRepository.save(user1);
         }
+//        if(userRepository.findUserByUsername("admin") == null) {
+//            Role adminRole = roleRepository.findAll().stream().filter(role-> role.getName().equals("ROLE_ADMIN")).findFirst().orElseThrow(EntityNotFoundException::new);
+//            User user1 = new User();
+//            user1.setUsername("admin");
+//            user1.setPassword(encoder.encode("123"));
+//            user1.setRoles(new LinkedHashSet<>(Arrays.asList(adminRole)));
+//            userRepository.save(user1);
+//            UserInfo userInfo1 = new UserInfo();
+//            userInfo1.setName("admin");
+//            userInfo1.setTelephone("00000");
+//            userInfoRepository.save(userInfo1);
+//            user1.setUserInfo(userInfo1);
+//            userRepository.save(user1);
+//        }
 
 //        User user2 = new User();
 //        user2.setUsername("tom");
@@ -67,10 +85,12 @@ public class SetupData {
 //        savedUser2.getUserInfo().setName("johnName");
 //        userRepository.save(savedUser2);
     }
+
     public void initPrivileges() {
         createPrivilegeIfNotFound("READ_PRIVILEGE");
         createPrivilegeIfNotFound("WRITE_PRIVILEGE");
     }
+
     public void initRoles() {
         Privilege readPrivilege
                 = createPrivilegeIfNotFound("READ_PRIVILEGE");
@@ -79,6 +99,7 @@ public class SetupData {
         Set<Privilege> adminPrivileges = new LinkedHashSet<>(Arrays.asList(readPrivilege, writePrivilege));
         createRoleIfNotFound("ROLE_ADMIN", adminPrivileges);
     }
+
     public Privilege createPrivilegeIfNotFound(String name) {
 
         Privilege privilege = privilegeRepository.findByName(name);
@@ -90,7 +111,7 @@ public class SetupData {
         return privilege;
     }
 
-//    @Transactional
+    //    @Transactional
 //    public User createUserIfNotFound(String username, String password, String telephone) {
 //
 //        User user = userRepository.findUserByUsername(username);
