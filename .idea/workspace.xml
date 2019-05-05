@@ -1,0 +1,3314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidGradleBuildConfiguration">
+    <option name="SYNC_PROJECT_BEFORE_BUILD" value="true" />
+  </component>
+  <component name="AutomaticModuleUnloader">
+    <loaded-modules>
+      <module name="springdemo_main" />
+      <module name="springdemo_test" />
+    </loaded-modules>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="73d493fd-d53e-490e-9b5a-4dc192968842" name="Default Changelist" comment="Revert &quot;Fixing some issues and trying to add github and facebook support&quot;&#10;&#10;This reverts commit 3a05d2615ac3d9ef3fe01397603fa6fa51489310.&#10;&#10;# Conflicts:&#10;#&#9;build.gradle&#10;#&#9;src/main/java/com/example/springdemo/configs/SecurityConfig.java">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/JsonToUrlEncodedAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/springdemo/SetupData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springdemo/SpringdemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springdemo/SpringdemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/OAuth2AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/OAuth2AuthorizationServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springdemo/persistence/SetupData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springdemo/persistence/SetupData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/springdemo/SpringdemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/springdemo/SpringdemoApplicationTests.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/springdemo$SpringdemoApplication.ic" NAME="SpringdemoApplication Coverage Results" MODIFIED="1538261999905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="157" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="autoscrollToSource" value="true" />
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="springdemo" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="springdemo" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="springdemo" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/OAuth2AuthorizationServerConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/SecurityConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="700">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
+              <folding>
+                <element signature="e#2424#2425#0" expanded="true" />
+                <element signature="e#2476#2477#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/springdemo/SpringdemoApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="49" selection-start-line="49" selection-end-line="56" selection-end-column="89" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/JsonToUrlEncodedAuthenticationFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="42" column="17" lean-forward="true" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3005#3006#0" expanded="true" />
+                <element signature="e#3047#3048#0" expanded="true" />
+                <element signature="e#3123#3124#0" expanded="true" />
+                <element signature="e#3187#3188#0" expanded="true" />
+                <element signature="e#3264#3265#0" expanded="true" />
+                <element signature="e#3311#3312#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Map.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="426" column="10" selection-start-line="426" selection-start-column="10" selection-end-line="426" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/util/stream/Stream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="646" column="9" selection-start-line="646" selection-start-column="9" selection-end-line="646" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Optional.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="132" column="51" selection-start-line="132" selection-start-column="51" selection-end-line="132" selection-end-column="51" />
+              <folding>
+                <element signature="e#4026#4027#0" expanded="true" />
+                <element signature="e#4084#4085#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.17/22819cd1fae898e96ca84a3e8394b0f0b15d9f17/tomcat-embed-core-9.0.17-sources.jar!/org/apache/tomcat/util/http/fileupload/IOUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-647">
+              <caret line="68" column="44" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/CustomTokenEnhancer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/MethodSecurityConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Aspect" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>map</find>
+      <find>mapstru</find>
+      <find>apt</find>
+      <find>source</find>
+      <find>lombok</find>
+      <find>spring-boot-dependencies</find>
+      <find>hibernate-gradle-plugin</find>
+      <find>hibernate</find>
+      <find>swagger</find>
+      <find>h2</find>
+      <find>dialect</find>
+      <find>junit</find>
+      <find>test</find>
+      <find>login</find>
+      <find>foo</find>
+      <find>AuthorizationServerSecurityConfigurer security</find>
+      <find>passwordencoder</find>
+      <find>AuthorizationServerConfiguration</find>
+      <find>configure</find>
+      <find>response</find>
+      <find>HttpSecurity</find>
+      <find>JsonToUrlEncodedAuthenticationFilter</find>
+      <find>ByteArrayOutputStream</find>
+      <find>r</find>
+      <find>to</find>
+      <find>nread</find>
+      <find>Catalina</find>
+      <find>facade</find>
+      <find>RequestFacade</find>
+      <find>faced</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/main/java/com/example/springdemo</dir>
+      <dir>$PROJECT_DIR$/src/main/java/com/example/springdemo/security</dir>
+      <dir>$PROJECT_DIR$/src/main/java</dir>
+      <dir>$PROJECT_DIR$/src</dir>
+      <dir>$PROJECT_DIR$/src/main</dir>
+      <dir>$PROJECT_DIR$/src/main/java/com/example/springdemo/configs</dir>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/playing_with_github_sso" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/security/CustomUserDetailsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/security/CustomSecurityExpressionRoot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/security/CustomMethodSecurityExpressionHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/security/CustomPermissionEvaluator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/services/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/security/MethodSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/persistence/repositories/PrivilegeRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/PersistenceHibernateConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/persistence/repositories/UserInfoRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/api/v1/model/UserinfoDTO.aj" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/api/v1/model/UserDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/api/v1/model/UserWithInfoDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/api/v1/mapper/UserinfoMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/api/v1/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/persistence/services/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/MethodSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/AuthorizationServerConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/persistence/repositories/RoleRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/Oauth2AuthorizationServerConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/CustomTokenEnhancer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/persistence/domain/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/persistence/domain/Privilege.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/persistence/domain/Role.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/security/CustomUserPrincipal.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/persistence/services/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/CustomOAuth2AuthorizationServerConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/persistence/domain/UserInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/ResourceServerConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/ApplicationProperties.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/EnvVarsEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/EnvironmentVariables.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/controllers/RestResponseEntityExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/WebMvcConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/controllers/v1/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/WebConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/persistence/repositories/UserRepository.java" />
+        <option value="$PROJECT_DIR$/gradle.properties" />
+        <option value="$PROJECT_DIR$/settings.gradle" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/settings.gradle.kts" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/persistence/SetupData.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/springdemo/SetupData.java" />
+        <option value="$PROJECT_DIR$/build.gradle.kts" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/SpringdemoApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/OAuth2AuthorizationServerConfig.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/springdemo/SpringdemoApplicationTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/JsonToUrlEncodedAuthenticationFilter.java" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/kotlinScripting.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__antlr_antlr_2_7_7.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_classic_1_2_3.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_core_1_2_3.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_classmate_1_4_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_9_8.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_9_8.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_8.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_8.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_8.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_jayway_jsonpath_json_path_2_4_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_istack_istack_commons_runtime_3_0_5.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_xml_bind_jaxb_core_2_3_0_1.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_xml_bind_jaxb_impl_2_3_0_1.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_xml_fastinfoset_FastInfoset_1_2_13.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_zaxxer_HikariCP_3_2_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_11.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__io_rest_assured_json_path_3_1_1.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__io_rest_assured_rest_assured_3_0_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__io_rest_assured_rest_assured_common_3_1_1.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__io_rest_assured_xml_path_3_1_1.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_swagger2_2_9_2_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__javax_activation_activation_1_1.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__javax_activation_javax_activation_api_1_2_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__javax_annotation_javax_annotation_api_1_3_2.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__javax_persistence_javax_persistence_api_2_2.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__javax_transaction_javax_transaction_api_1_3.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__javax_validation_validation_api_2_0_1_Final.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__javax_xml_bind_jaxb_api_2_3_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__mysql_mysql_connector_java_8_0_15.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_9_12.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_agent_1_9_12.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__net_minidev_accessors_smart_1_2.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__net_minidev_json_smart_2_3.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_lang3_3_8_1.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpclient_4_5_8.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpcore_4_4_11.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpmime_4_5_8.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_api_2_11_2.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_to_slf4j_2_11_2.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_core_9_0_17.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_el_9_0_17.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_17.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_aspectj_aspectjweaver_1_9_2.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_assertj_assertj_core_3_11_1.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_bouncycastle_bcpkix_jdk15on_1_56.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_bouncycastle_bcprov_jdk15on_1_56.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_ccil_cowan_tagsoup_tagsoup_1_2_1.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_groovy_groovy_2_5_6.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_groovy_groovy_json_2_5_6.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_groovy_groovy_xml_2_5_6.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_dom4j_dom4j_2_1_1.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_glassfish_jaxb_jaxb_core_2_3_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_glassfish_jaxb_jaxb_runtime_2_3_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_glassfish_jaxb_txw2_2_3_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_common_hibernate_commons_annotations_5_0_4_Final.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_hibernate_core_5_3_9_Final.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_validator_hibernate_validator_6_0_16_Final.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_javassist_javassist_3_23_1_GA.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_jandex_2_0_5_Final.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_3_2_Final.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_jvnet_staxex_stax_ex_1_7_8.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_mapstruct_mapstruct_1_3_0_Final.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_mapstruct_mapstruct_processor_1_3_0_Final.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_mariadb_jdbc_mariadb_java_client_2_4_1.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_core_2_23_4.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_objenesis_objenesis_2_6.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_5_0_4.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_projectlombok_lombok_1_18_4.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_projectlombok_lombok_1_18_6.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_skyscreamer_jsonassert_1_5_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_jul_to_slf4j_1_7_26.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_26.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_2_1_4_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_2_1_4_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_configuration_processor_2_1_4_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_devtools_2_1_4_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_2_1_4_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_aop_2_1_4_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_data_jpa_2_1_4_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_jdbc_2_1_4_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_json_2_1_4_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_2_1_4_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_security_2_1_4_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_test_2_1_4_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_tomcat_2_1_4_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_validation_2_1_4_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_web_2_1_4_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_2_1_4_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_autoconfigure_2_1_4_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_data_spring_data_commons_2_1_6_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_data_spring_data_jpa_2_1_6_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_oauth_boot_spring_security_oauth2_autoconfigure_2_1_0_BUILD_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_oauth_spring_security_oauth2_2_3_4_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_config_5_1_5_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_core_5_1_5_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_jwt_1_0_9_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_test_5_1_5_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_web_5_1_5_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aop_5_1_6_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aspects_5_1_6_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_beans_5_1_6_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_5_1_6_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_core_5_1_6_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_expression_5_1_6_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jcl_5_1_6_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jdbc_5_1_6_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_orm_5_1_6_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_test_5_1_6_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_tx_5_1_6_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_web_5_1_6_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webmvc_5_1_6_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_xmlunit_xmlunit_core_2_6_2.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_yaml_snakeyaml_1_23.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_20_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_core_2_9_2_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_schema_2_9_2_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_spi_2_9_2_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_spring_web_2_9_2_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_swagger_common_2_9_2_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_swagger_ui_2_9_2_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__io_swagger_swagger_annotations_1_5_20.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__io_swagger_swagger_models_1_5_20.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_h2database_h2_1_4_199.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="1027" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDemo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDemo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDemo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDemo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDemo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDemo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springdemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDemo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="configs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDemo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDemo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDemo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDemo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDemo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springdemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 11 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 11 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 11 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 11 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 11 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="stream" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.17" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.17" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-9.0.17.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.17" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-9.0.17.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="javax" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.17" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-9.0.17.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="javax" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.17" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-9.0.17.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="javax" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.17" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-9.0.17.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.17" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-9.0.17.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="tomcat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.17" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-9.0.17.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="tomcat" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.17" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-9.0.17.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="tomcat" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.17" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-9.0.17.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="tomcat" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+              <item name="fileupload" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.projectlombok:lombok:1.18.6" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.projectlombok:lombok:1.18.6" type="70bed36:NamedLibraryElementNode" />
+              <item name="lombok-1.18.6.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.projectlombok:lombok:1.18.6" type="70bed36:NamedLibraryElementNode" />
+              <item name="lombok-1.18.6.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="lombok" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="LombokPluginEnabledInProject" value="true" />
+    <property name="LombokPluginIS_BUILDER_Enabled" value="true" />
+    <property name="LombokPluginIS_CONSTRUCTOR_Enabled" value="true" />
+    <property name="LombokPluginIS_DELEGATE_Enabled" value="true" />
+    <property name="LombokPluginIS_LOG_Enabled" value="true" />
+    <property name="LombokPluginIS_LOMBOK_VERSION_CHECK_Enabled" value="true" />
+    <property name="LombokPluginIS_MISSING_LOMBOK_CHECK_Enabled" value="true" />
+    <property name="LombokPluginIS_RUNTIME_PATCH_Enabled" value="false" />
+    <property name="LombokPluginIS_THIRD_PARTY_Enabled" value="false" />
+    <property name="LombokPluginIS_VAL_Enabled" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SearchEverywhereHistoryKey" value="wrap&#9;ACTION&#9;EditorToggleUseSoftWraps&#10;registry&#9;ACTION&#9;ShowRegistry" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557050768185" />
+    <property name="external.system.task.project.file.to.start" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.6448276" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.springdemo.persistence" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/" />
+                <option name="value" value="D21B19FC2DDC349F6C5D0165B13B65F0" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="offset" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="10" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{      &quot;username&quot;:&quot;deviad&quot;,      &quot;password&quot;: &quot;password&quot;,   &quot;name&quot;: &quot;davide&quot;,   &quot;surname&quot;: &quot;pugliese&quot;,   &quot;telephone&quot;: &quot;000000000&quot;  }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/" />
+                <option name="value" value="D21B19FC2DDC349F6C5D0165B13B65F0" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users/40" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="offset" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="10" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{      &quot;username&quot;:&quot;deviad&quot;,      &quot;password&quot;: &quot;password&quot;,   &quot;name&quot;: &quot;davide&quot;,   &quot;surname&quot;: &quot;pugliese&quot;,   &quot;telephone&quot;: &quot;000000000&quot;  }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/" />
+                <option name="value" value="D21B19FC2DDC349F6C5D0165B13B65F0" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="offset" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="10" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{      &quot;username&quot;:&quot;deviad&quot;,      &quot;password&quot;: &quot;password&quot;,   &quot;name&quot;: &quot;davide&quot;,   &quot;surname&quot;: &quot;pugliese&quot;,   &quot;telephone&quot;: &quot;000000000&quot;  }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/" />
+                <option name="value" value="D21B19FC2DDC349F6C5D0165B13B65F0" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="offset" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="10" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{      &quot;username&quot;:&quot;deviad&quot;,      &quot;password&quot;: &quot;password&quot;,   &quot;name&quot;: &quot;davide&quot;,   &quot;surname&quot;: &quot;pugliese&quot;,   &quot;telephone&quot;: &quot;000000000&quot;  }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="offset" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="10" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{      &quot;username&quot;:&quot;deviad&quot;,      &quot;password&quot;: &quot;password&quot;,   &quot;name&quot;: &quot;davide&quot;,   &quot;surname&quot;: &quot;pugliese&quot;,   &quot;telephone&quot;: &quot;000000000&quot;  }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="offset" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="10" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{      &quot;username&quot;:&quot;deviad&quot;,      &quot;password&quot;: &quot;password&quot;,   &quot;name&quot;: &quot;davide&quot;,   &quot;surname&quot;: &quot;pugliese&quot;,   &quot;telephone&quot;: &quot;000000000&quot;  }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="offset" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="10" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;username&quot;:&quot;davide&quot;,   &quot;password&quot;: &quot;password&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="offset" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;username&quot;:&quot;davide&quot;,   &quot;password&quot;: &quot;password&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="offset" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;username&quot;:&quot;davide&quot;,   &quot;password&quot;: &quot;password&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="offset" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;username&quot;:&quot;davide&quot;,   &quot;password&quot;: &quot;password&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="offset" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;username&quot;:&quot;davide&quot;,   &quot;password&quot;: &quot;password&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="offset" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;username&quot;:&quot;davide&quot;,   &quot;password&quot;: &quot;password&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="offset" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;username&quot;:&quot;davide&quot;,   &quot;password&quot;: &quot;password&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="offset" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;username&quot;:&quot;davide&quot;,   &quot;password&quot;: &quot;password&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="offset" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;username&quot;:&quot;davide&quot;,   &quot;password&quot;: &quot;password&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="-1" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="offset" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;username&quot;:&quot;davide&quot;,   &quot;password&quot;: &quot;password&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="offset" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;username&quot;:&quot;davide&quot;,   &quot;password&quot;: &quot;password&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="offset" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;username&quot;:&quot;davide&quot;,   &quot;password&quot;: &quot;password&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="offset" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;username&quot;:&quot;davide&quot;,   &quot;password&quot;: &quot;password&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="4" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="offset" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;username&quot;:&quot;davide&quot;,   &quot;password&quot;: &quot;password&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="4" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="offset" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;username&quot;:&quot;davide&quot;,   &quot;password&quot;: &quot;password&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="4" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="offset" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;username&quot;:&quot;davide&quot;,   &quot;password&quot;: &quot;password&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="4" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="offset" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;username&quot;:&quot;davide&quot;,   &quot;password&quot;: &quot;password&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="4" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;username&quot;:&quot;davide&quot;,   &quot;password&quot;: &quot;password&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="4" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;username&quot;:&quot;davide&quot;,   &quot;password&quot;: &quot;password&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="2" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;username&quot;:&quot;davide&quot;,   &quot;password&quot;: &quot;password&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="2" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;username&quot;:&quot;davide&quot;,   &quot;password&quot;: &quot;password&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;username&quot;:&quot;davide&quot;,   &quot;password&quot;: &quot;password&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;username&quot;:&quot;davide&quot;,   &quot;password&quot;: &quot;password&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users/2" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;username&quot;:&quot;davide&quot;,   &quot;password&quot;: &quot;password&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users/1" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;username&quot;:&quot;davide&quot;,   &quot;password&quot;: &quot;password&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{     username: &quot;davide&quot;     password: &quot;password&quot;     }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{     username: &quot;davide&quot;     password: &quot;password&quot;     }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{     &quot;username&quot;: &quot;davide&quot;     &quot;password&quot;: &quot;password&quot;     }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5050" />
+          <option name="urlPath" value="/api/v1/users" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{     &quot;username&quot;: &quot;davide&quot;     &quot;password&quot;: &quot;password&quot;     }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringdemoApplication">
+    <configuration default="true" type="DjangoTestsConfigurationType">
+      <module name="springdemo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Bootrun" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="ACTIVE_PROFILE" value="development" />
+            <entry key="APP_HOSTNAME" value="localhost" />
+            <entry key="CLIENT_ID" value="fooClientIdPassword" />
+            <entry key="CLIENT_SECRET" value="secret" />
+            <entry key="DB_DBMS" value="mysql" />
+            <entry key="DB_HOSTNAME" value="localhost" />
+            <entry key="DB_NAME" value="springdemo" />
+            <entry key="DB_PASSWORD" value="springpassword" />
+            <entry key="DB_USERNAME" value="springuser" />
+            <entry key="DDL_AUTO" value="create-drop" />
+            <entry key="JWT_SIGNING_KEY" value="supersecretkey" />
+            <entry key="SERVER_PORT" value="5050" />
+          </map>
+        </option>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--info" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Build" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="ACTIVE_PROFILE" value="development" />
+            <entry key="APP_HOSTNAME" value="localhost" />
+            <entry key="CLIENT_ID" value="fooClientIdPassword" />
+            <entry key="CLIENT_SECRET" value="secret" />
+            <entry key="DB_DBMS" value="mysql" />
+            <entry key="DB_HOSTNAME" value="localhost" />
+            <entry key="DB_NAME" value="springdemo" />
+            <entry key="DB_PASSWORD" value="springpassword" />
+            <entry key="DB_USERNAME" value="springuser" />
+            <entry key="DDL_AUTO" value="create-drop" />
+            <entry key="JWT_SIGNING_KEY" value="supersecretkey" />
+            <entry key="SERVER_PORT" value="5050" />
+          </map>
+        </option>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SpringDemo [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SpringDemo [bootRunDev]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRunDev" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SpringDemo" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SpringdemoApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="ACTIVE_PROFILE" value="development" />
+            <entry key="APP_HOSTNAME" value="localhost" />
+            <entry key="CLIENT_ID" value="fooClientIdPassword" />
+            <entry key="CLIENT_SECRET" value="secret" />
+            <entry key="DB_DBMS" value="mysql" />
+            <entry key="DB_HOSTNAME" value="localhost" />
+            <entry key="DB_NAME" value="springdemo" />
+            <entry key="DB_PASSWORD" value="springpassword" />
+            <entry key="DB_USERNAME" value="springuser" />
+            <entry key="DDL_AUTO" value="create-drop" />
+            <entry key="JWT_SIGNING_KEY" value="supersecretkey" />
+            <entry key="SERVER_PORT" value="5050" />
+          </map>
+        </option>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.example.springdemo.SpringdemoApplicationTests&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SpringdemoApplicationTests.contextLoads" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="ACTIVE_PROFILE" value="development" />
+            <entry key="APP_HOSTNAME" value="localhost" />
+            <entry key="CLIENT_ID" value="fooClientIdPassword" />
+            <entry key="CLIENT_SECRET" value="secret" />
+            <entry key="DB_DBMS" value="mysql" />
+            <entry key="DB_HOSTNAME" value="localhost" />
+            <entry key="DB_NAME" value="springdemo" />
+            <entry key="DB_PASSWORD" value="springpassword" />
+            <entry key="DB_USERNAME" value="springuser" />
+            <entry key="DDL_AUTO" value="create-drop" />
+            <entry key="JWT_SIGNING_KEY" value="supersecretkey" />
+            <entry key="SERVER_PORT" value="5050" />
+          </map>
+        </option>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.example.springdemo.SpringdemoApplicationTests.contextLoads&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="springdemo" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="springdemo" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <module name="springdemo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <module name="springdemo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="springdemo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <module name="springdemo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SpringdemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springdemo_main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.springdemo.SpringdemoApplication" />
+      <option name="DEBUG_MODE" value="true" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_WORKING_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndTriggerFile" />
+      <envs>
+        <env name="DB_NAME" value="springdemo" />
+        <env name="DB_USERNAME" value="springuser" />
+        <env name="DB_PASSWORD" value="springpassword" />
+        <env name="SERVER_PORT" value="5050" />
+        <env name="ACTIVE_PROFILE" value="development" />
+        <env name="CLIENT_ID" value="fooClientIdPassword" />
+        <env name="DB_HOSTNAME" value="localhost" />
+        <env name="CLIENT_SECRET" value="secret" />
+        <env name="APP_HOSTNAME" value="localhost" />
+        <env name="DDL_AUTO" value="create-drop" />
+        <env name="JWT_SIGNING_KEY" value="supersecretkey" />
+        <env name="DB_DBMS" value="mysql" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="springdemo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="springdemo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <module name="springdemo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Twisted Trial">
+      <module name="springdemo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="springdemo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <module name="springdemo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.Bootrun" />
+      <item itemvalue="Gradle.Build" />
+      <item itemvalue="Gradle.SpringDemo [bootJar]" />
+      <item itemvalue="Gradle.SpringDemo [bootRunDev]" />
+      <item itemvalue="Gradle.SpringDemo" />
+      <item itemvalue="Gradle.SpringdemoApplicationTests" />
+      <item itemvalue="Gradle.SpringdemoApplicationTests.contextLoads" />
+      <item itemvalue="Spring Boot.SpringdemoApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.SpringdemoApplicationTests" />
+        <item itemvalue="Gradle.SpringdemoApplicationTests.contextLoads" />
+        <item itemvalue="Gradle.SpringDemo" />
+        <item itemvalue="Gradle.SpringDemo [bootRunDev]" />
+        <item itemvalue="Gradle.SpringDemo [bootJar]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73d493fd-d53e-490e-9b5a-4dc192968842" name="Default Changelist" comment="" />
+      <created>1536954363300</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1536954363300</updated>
+      <workItem from="1536954366574" duration="2331000" />
+      <workItem from="1536997218010" duration="1769000" />
+      <workItem from="1537028848168" duration="35287000" />
+      <workItem from="1537114950237" duration="2240000" />
+      <workItem from="1537117283059" duration="18653000" />
+      <workItem from="1537167304792" duration="1017000" />
+      <workItem from="1537168457422" duration="18279000" />
+      <workItem from="1537210484753" duration="12979000" />
+      <workItem from="1537255493337" duration="36218000" />
+      <workItem from="1537334843973" duration="10546000" />
+      <workItem from="1537371949585" duration="6201000" />
+      <workItem from="1537414661430" duration="1171000" />
+      <workItem from="1537531718598" duration="2372000" />
+      <workItem from="1537540178482" duration="73000" />
+      <workItem from="1537618514685" duration="8705000" />
+      <workItem from="1537757774950" duration="10899000" />
+      <workItem from="1537774605233" duration="8729000" />
+      <workItem from="1537799117978" duration="8000" />
+      <workItem from="1537814227649" duration="2070000" />
+      <workItem from="1537842844418" duration="7220000" />
+      <workItem from="1537858519800" duration="1746000" />
+      <workItem from="1537864708181" duration="3878000" />
+      <workItem from="1537993913576" duration="715000" />
+      <workItem from="1538032139247" duration="729000" />
+      <workItem from="1538038548324" duration="1234000" />
+      <workItem from="1538044811681" duration="301000" />
+      <workItem from="1538045122845" duration="14000" />
+      <workItem from="1538152811485" duration="16561000" />
+      <workItem from="1538189487186" duration="46031000" />
+      <workItem from="1538292430899" duration="24471000" />
+      <workItem from="1538338669474" duration="15866000" />
+      <workItem from="1538376130207" duration="15707000" />
+      <workItem from="1538497022371" duration="13647000" />
+      <workItem from="1538558896828" duration="148000" />
+      <workItem from="1538559052407" duration="4000" />
+      <workItem from="1538559943389" duration="1255000" />
+      <workItem from="1538572336234" duration="1301000" />
+      <workItem from="1538827953040" duration="35000" />
+      <workItem from="1538833245573" duration="5348000" />
+      <workItem from="1538975635874" duration="775000" />
+      <workItem from="1538977399670" duration="2493000" />
+      <workItem from="1538981189996" duration="309000" />
+      <workItem from="1538981988001" duration="948000" />
+      <workItem from="1539023727703" duration="909000" />
+      <workItem from="1539716156026" duration="6588000" />
+      <workItem from="1539788022377" duration="550000" />
+      <workItem from="1539825979209" duration="1892000" />
+      <workItem from="1539830286788" duration="949000" />
+      <workItem from="1540101749026" duration="4260000" />
+      <workItem from="1540139723987" duration="1227000" />
+      <workItem from="1546261518934" duration="1739000" />
+      <workItem from="1546340908149" duration="2011000" />
+      <workItem from="1550091540705" duration="431000" />
+      <workItem from="1550091998389" duration="1561000" />
+      <workItem from="1550399609291" duration="1140000" />
+      <workItem from="1550902536315" duration="465000" />
+      <workItem from="1556821736512" duration="7799000" />
+      <workItem from="1556949135934" duration="41294000" />
+      <workItem from="1557050962563" duration="23368000" />
+    </task>
+    <task id="LOCAL-00001" summary="Refactoring for docker">
+      <created>1556973361611</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1556973361611</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="SpringdemoApplicationTests - 2019.05.05 at 17h 40m 24s.xml">
+      <configuration name="SpringdemoApplicationTests" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="SpringdemoApplicationTests - 2019.05.05 at 17h 41m 23s.xml">
+      <configuration name="SpringdemoApplicationTests" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="SpringdemoApplicationTests_contextLoads - 2019.05.05 at 17h 42m 07s.xml">
+      <configuration name="SpringdemoApplicationTests.contextLoads" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="SpringdemoApplicationTests_contextLoads - 2019.05.05 at 17h 43m 21s.xml">
+      <configuration name="SpringdemoApplicationTests.contextLoads" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="SpringdemoApplicationTests - 2019.05.05 at 17h 59m 25s.xml">
+      <configuration name="SpringdemoApplicationTests" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="SpringdemoApplicationTests - 2019.05.05 at 18h 00m 17s.xml">
+      <configuration name="SpringdemoApplicationTests" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="SpringdemoApplicationTests - 2019.05.05 at 18h 01m 58s.xml">
+      <configuration name="SpringdemoApplicationTests" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="SpringdemoApplicationTests - 2019.05.05 at 18h 02m 39s.xml">
+      <configuration name="SpringdemoApplicationTests" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="SpringdemoApplicationTests - 2019.05.05 at 18h 03m 27s.xml">
+      <configuration name="SpringdemoApplicationTests" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="SpringdemoApplicationTests - 2019.05.05 at 18h 30m 31s.xml">
+      <configuration name="SpringdemoApplicationTests" configurationId="GradleRunConfiguration" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="436466000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1996337" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="JRebel" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Web" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="GraphQL" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.498779" weight="0.32941177" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.65262514" weight="0.29090908" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6727717" visible="true" weight="0.33582887" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946752" weight="0.3295063" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.497558" weight="0.3315508" />
+      <window_info anchor="bottom" id="Spring" order="8" sideWeight="0.49840257" weight="0.3295063" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.7356532" weight="0.3272727" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.34737486" side_tool="true" weight="0.4973262" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.49893504" weight="0.3295063" />
+      <window_info anchor="bottom" id="RNConsole" order="12" sideWeight="0.49893504" weight="0.32963374" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4969475" weight="0.32834226" />
+      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.2218345" side_tool="true" weight="0.27579558" />
+      <window_info anchor="bottom" id="JRebel Executor" order="16" sideWeight="0.6964108" weight="0.37994215" />
+      <window_info anchor="bottom" id="Messages" order="17" sideWeight="0.49823424" weight="0.3245283" />
+      <window_info anchor="bottom" id="REST Client" order="18" sideWeight="0.49307775" visible="true" weight="0.34593356" />
+      <window_info anchor="bottom" id="Problems" order="19" sideWeight="0.49840257" weight="0.32941177" />
+      <window_info anchor="bottom" id="Docker" order="20" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Quokka" order="21" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.1984127" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="SciView" order="10" />
+      <window_info anchor="right" id="Bean Validation" order="11" />
+      <window_info anchor="right" id="Coverage" order="12" side_tool="true" weight="0.2113951" />
+      <window_info anchor="right" id="Maven" order="13" />
+      <window_info anchor="right" id="Codota" order="14" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3354935" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="JRebel" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Web" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946752" weight="0.3295063" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.62711865" visible="true" weight="0.27579558" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6749751" weight="0.33751205" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946752" weight="0.3295063" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4978701" weight="0.3318535" />
+      <window_info anchor="bottom" id="Spring" order="8" sideWeight="0.49840257" weight="0.3295063" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4978701" weight="0.20925747" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.37288135" side_tool="true" visible="true" weight="0.27579558" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.49893504" weight="0.3295063" />
+      <window_info anchor="bottom" id="RNConsole" order="12" sideWeight="0.49893504" weight="0.32963374" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3295063" />
+      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.3232162" side_tool="true" weight="0.39792746" />
+      <window_info anchor="bottom" id="JRebel Executor" order="16" sideWeight="0.6964108" weight="0.37994215" />
+      <window_info anchor="bottom" id="Messages" order="17" sideWeight="0.49893504" weight="0.32497588" />
+      <window_info anchor="bottom" id="REST Client" order="18" sideWeight="0.49307775" visible="true" weight="0.34593356" />
+      <window_info anchor="bottom" id="Problems" order="19" sideWeight="0.49840257" weight="0.32953367" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Gradle" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="SciView" order="10" />
+      <window_info anchor="right" id="Bean Validation" order="11" />
+      <window_info anchor="right" id="Coverage" order="12" side_tool="true" weight="0.2113951" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactoring for docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring for docker" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/OAuth2AuthorizationServerConfig.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/OAuth2AuthorizationServerConfig.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/SecurityConfig.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/SecurityConfig.java</url>
+          <line>59</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/SecurityConfig.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/CustomTokenEnhancer.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/MethodSecurityConfig.java</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/JsonToUrlEncodedAuthenticationFilter.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>wrappedRequest.getInputStream()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>wrappedRequest</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>wrappedRequest.getHeaderNames()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>wrappedRequest.getParameterMap()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>wrappedRequest.getParameter(0);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>wrappedRequest.getParts()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>s</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request.getContentType()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/springdemo/persistence/domain/Privilege.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle.properties" />
+    <entry file="file://$PROJECT_DIR$/springdemo.iml" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test/2.1.4.RELEASE/a6eaaa2bec94e751f7639d618faf3b481f1af267/spring-boot-test-2.1.4.RELEASE-sources.jar!/org/springframework/boot/test/context/SpringBootTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="110" column="28" selection-start-line="110" selection-start-column="14" selection-end-line="110" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/resources/application.yml" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.1.6.RELEASE/8835ea6a3a75e4efc37f417d4a25353a8198768d/spring-test-5.1.6.RELEASE-sources.jar!/org/springframework/test/context/TestPropertySource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-578">
+          <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.1.6.RELEASE/647293fbac4e4a0805d5440151ebb79cd0bf426b/spring-context-5.1.6.RELEASE-sources.jar!/org/springframework/context/annotation/DependsOn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.1.5.RELEASE/48ad8a299212cef3d4601b2154c9ea5c64a27f85/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/crypto/password/PasswordEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/springdemo/security/CustomUserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/reports/tests/test/index.html" />
+    <entry file="file://$PROJECT_DIR$/build.gradle" />
+    <entry file="file://$PROJECT_DIR$/settings.gradle" />
+    <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d2e7c1f2dfec4bc5344addcdaa060228/unzipped-distribution/gradle-5.4.1/subprojects/kotlin-dsl/src/main/kotlin/org/gradle/kotlin/dsl/ExtraPropertiesExtensions.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.gradle/caches/5.4.1/gradle-kotlin-dsl-accessors/lr8c6kkm9crh7gqyf3s5bey8/cache/classes/org/gradle/kotlin/dsl/Accessorsblypoh2ruc9u3bx9djsfqsntgKt.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="131" selection-start-line="7" selection-start-column="131" selection-end-line="7" selection-end-column="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-5.4.1-bin/e75iq110yv9r9wt1a6619x2xm/gradle-5.4.1/lib/kotlin-stdlib-1.3.21.jar!/kotlin/Unit.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.gradle/caches/5.4.1/gradle-kotlin-dsl-accessors/lr8c6kkm9crh7gqyf3s5bey8/cache/src/org/gradle/kotlin/dsl/ImplementationConfigurationAccessors.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/springdemo/api/v1/model/UserWithInfoDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/springdemo/persistence/repositories/RoleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d2e7c1f2dfec4bc5344addcdaa060228/unzipped-distribution/gradle-5.4.1/subprojects/core-api/src/main/java/org/gradle/api/artifacts/dsl/RepositoryHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="142" column="32" selection-start-line="142" selection-start-column="32" selection-end-line="142" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-5.4.1-bin/e75iq110yv9r9wt1a6619x2xm/gradle-5.4.1/lib/gradle-kotlin-dsl-5.4.1.jar!/org/gradle/kotlin/dsl/ProjectExtensions.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="148" column="54" selection-start-line="148" selection-start-column="54" selection-end-line="148" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle.old">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle.old">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lombok.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle.kts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/20.0/9c8493c7991464839b612d7547d6c263adf08f75/guava-20.0-sources.jar!/com/google/common/util/concurrent/UncheckedExecutionException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
+          <folding>
+            <element signature="e#2104#2105#0" expanded="true" />
+            <element signature="e#2126#2127#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.rest-assured/rest-assured/3.0.0/9d08beb00c2a89a7a7e40dba7ff51b7f4ac186e5/rest-assured-3.0.0-sources.jar!/io/restassured/mapper/ObjectMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/springdemo/persistence/SetupData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="153" column="5" selection-start-line="27" selection-start-column="4" selection-end-line="153" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle.kts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-718">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/springdemo/SetupData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-959">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/springdemo/SpringdemoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#847#848#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1060">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.17/22819cd1fae898e96ca84a3e8394b0f0b15d9f17/tomcat-embed-core-9.0.17-sources.jar!/javax/servlet/http/HttpServletRequestWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <element signature="e#1787#1788#0" expanded="true" />
+            <element signature="e#1817#1818#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/EnvVarsEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/EnvironmentVariables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security.oauth/spring-security-oauth2/2.3.4.RELEASE/1f8dddd8964c98290f831fbdb1d5cb4b121b60e9/spring-security-oauth2-2.3.4.RELEASE-sources.jar!/org/springframework/security/oauth2/config/annotation/web/configurers/AuthorizationServerSecurityConfigurer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="129" column="25" selection-start-line="129" selection-start-column="21" selection-end-line="129" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.1.5.RELEASE/69763102fb37f1b5b9828707c232b07881580529/spring-security-config-5.1.5.RELEASE-sources.jar!/org/springframework/security/config/annotation/ObjectPostProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="31" column="36" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.1.5.RELEASE/69763102fb37f1b5b9828707c232b07881580529/spring-security-config-5.1.5.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/builders/HttpSecurity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="112" column="2" selection-start-line="112" selection-start-column="2" selection-end-line="112" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.6/2908ec27909c1929a9f2e031e4ae27e54d268860/lombok-1.18.6-sources.jar!/lombok/AllArgsConstructor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="32" column="73" selection-start-line="32" selection-start-column="73" selection-end-line="32" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/springdemo/SpringdemoApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="49" selection-start-line="49" selection-end-line="56" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/CustomTokenEnhancer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.17/22819cd1fae898e96ca84a3e8394b0f0b15d9f17/tomcat-embed-core-9.0.17-sources.jar!/org/apache/tomcat/util/http/fileupload/IOUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-647">
+          <caret line="68" column="44" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/MethodSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/OAuth2AuthorizationServerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="e#2424#2425#0" expanded="true" />
+            <element signature="e#2476#2477#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Optional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="132" column="51" selection-start-line="132" selection-start-column="51" selection-end-line="132" selection-end-column="51" />
+          <folding>
+            <element signature="e#4026#4027#0" expanded="true" />
+            <element signature="e#4084#4085#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/util/stream/Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="646" column="9" selection-start-line="646" selection-start-column="9" selection-end-line="646" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="426" column="10" selection-start-line="426" selection-start-column="10" selection-end-line="426" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/springdemo/configs/JsonToUrlEncodedAuthenticationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="42" column="17" lean-forward="true" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3005#3006#0" expanded="true" />
+            <element signature="e#3047#3048#0" expanded="true" />
+            <element signature="e#3123#3124#0" expanded="true" />
+            <element signature="e#3187#3188#0" expanded="true" />
+            <element signature="e#3264#3265#0" expanded="true" />
+            <element signature="e#3311#3312#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="gradleExecuteTaskHistory">
+    <option value="$PROJECT_DIR$" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.6448276" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring (springdemo_main)|Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.6448276" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Python 3.6 (forhumans-EvMHs5bx) interpreter library</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.6448276" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.6448276" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>springdemo</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.6448276" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.6448276" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

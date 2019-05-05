@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.springfox:springfox-core:2.9.2-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-core/2.9.2-SNAPSHOT/9108aedfd2d9ed87b5e7725613320dd7ec5a690f/springfox-core-2.9.2-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-core/2.9.2-SNAPSHOT/63d15e0b30c4d2ae02180f3b9dc155abbc4bb26d/springfox-core-2.9.2-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

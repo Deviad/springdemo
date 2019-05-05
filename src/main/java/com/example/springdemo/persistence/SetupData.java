@@ -10,6 +10,7 @@ import com.example.springdemo.persistence.repositories.UserInfoRepository;
 import com.example.springdemo.persistence.repositories.UserRepository;
 //import org.springframework.beans.factory.DisposableBean;
 //import org.springframework.beans.factory.InitializingBean;
+import org.springframework.context.annotation.Profile;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
@@ -21,6 +22,7 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 
 @Component
+@Profile("!test")
 public class SetupData  {
 
     private final UserRepository userRepository;
