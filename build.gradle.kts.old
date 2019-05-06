@@ -38,7 +38,7 @@ repositories {
 
 plugins {
     // Apply the java plugin to add support for Java
-    `java-library`
+    java
 
     // Apply the application plugin to add support for building an application
     application
@@ -55,8 +55,8 @@ plugins {
 }
 
 buildscript {
-    val springBootVersion = "2.1.4.RELEASE"
-    val hibernateVersion = "5.4.2.Final"
+val springBootVersion = "2.1.4.RELEASE"
+val hibernateVersion = "5.4.2.Final"
 
     dependencies {
         classpath("gradle.plugin.com.boxfuse.client:gradle-plugin-publishing:5.0.3")
@@ -67,43 +67,52 @@ buildscript {
 
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.
-    api("org.springframework.boot:spring-boot-starter-aop:$springBootVersion")
-    api("org.springframework.boot:spring-boot-starter-data-jpa:$springBootVersion")
-    api("org.springframework.boot:spring-boot-starter-jdbc:$springBootVersion")
-    api("org.springframework.boot:spring-boot-starter-security:$springBootVersion")
-    api("org.springframework.boot:spring-boot-starter-validation:$springBootVersion")
-    api("org.springframework.boot:spring-boot-starter-web:$springBootVersion")
-    api("org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:$springBootVersion")
+    compileClasspath("org.springframework:spring-context::$springBootVersion")
+    compileClasspath("org.springframework.boot:spring-boot-starter-aop:$springBootVersion")
+    compileClasspath("org.springframework.boot:spring-boot-starter-data-jpa:$springBootVersion")
+    compileClasspath("org.springframework.boot:spring-boot-starter-jdbc:$springBootVersion")
+    compileClasspath("org.springframework.boot:spring-boot-starter-security:$springBootVersion")
+    compileClasspath("org.springframework.boot:spring-boot-starter-validation:$springBootVersion")
+    compileClasspath("org.springframework.boot:spring-boot-starter-web:$springBootVersion")
+    compileClasspath("org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:$springBootVersion")
     //This dep treats nested classes as if they were nested properties
-    api("org.springframework.boot:spring-boot-configuration-processor:$springBootVersion")
+    compileClasspath("org.springframework.boot:spring-boot-configuration-processor:$springBootVersion")
 //    compile('org.springframework.boot:spring-boot-starter-oauth2-oidc-client:2.1.0.BUILD-SNAPSHOT')
-    implementation("io.springfox:springfox-swagger2:2.9.2")
-    implementation("io.springfox:springfox-swagger-ui:2.9.2")
-    api("io.rest-assured:rest-assured:3.0.0")
-    api("io.rest-assured:spring-mock-mvc:3.0.0")
+    compileClasspath("io.springfox:springfox-swagger2:2.9.2-RELEASE")
+    compileClasspath("io.springfox:springfox-swagger-ui:2.9.2-RELEASE")
+    compileClasspath("io.rest-assured:rest-assured:3.0.0")
 //    compile('org.springframework.security.oauth:spring-security-oauth2:2.3.3.RELEASE')
+    compileClasspath("org.springframework.security:spring-security-jwt:$springBootVersion")
 //    compile('org.projectlombok:lombok')
     annotationProcessor("org.projectlombok:lombok:$lombokVersion")
-    api("org.projectlombok:lombok:$lombokVersion")
-    implementation("org.mapstruct:mapstruct:$mapstructVersion")
-    implementation("org.mapstruct:mapstruct-processor:$mapstructVersion")
-    api("org.springframework.boot:spring-boot-devtools:$springBootVersion")
-    api("org.apache.commons:commons-lang3:3.8.1")
-    api("javax.xml.bind:jaxb-api:2.3.0")
-    api("javax.activation:activation:1.1")
-    api("org.glassfish.jaxb:jaxb-runtime:2.3.0")
-    api("javax.annotation:javax.annotation-api:1.3.2")
+    compileClasspath("org.projectlombok:lombok:$lombokVersion")
+    compileClasspath("org.mapstruct:mapstruct:$mapstructVersion")
+    compileClasspath("org.mapstruct:mapstruct-processor:$mapstructVersion")
+    compileClasspath("org.springframework.boot:spring-boot-devtools:$springBootVersion")
+    compileClasspath("org.apache.commons:commons-lang3:3.8.1")
+    compileClasspath("javax.xml.bind:jaxb-api:2.3.0")
+    compileClasspath("javax.activation:activation:1.1")
+    compileClasspath("org.glassfish.jaxb:jaxb-runtime:2.3.0")
+    compileClasspath("javax.annotation:javax.annotation-api:1.3.2")
     runtime("mysql:mysql-connector-java")
     runtime("org.mariadb.jdbc:mariadb-java-client:2.4.1")
     testRuntime("com.h2database:h2")
+    testCompileClasspath("org.springframework:spring-test") {
+        exclude(group = "junit.junit")
+    }
 //    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.4.2")
 //    testImplementation("org.junit.jupiter:junit-jupiter-api:5.4.2")
-    testImplementation("org.apache.logging.log4j:log4j-core:$log4j2Version")
-    testImplementation("org.springframework.security:spring-security-test")
-    testImplementation("org.springframework.boot:spring-boot-starter-test:$springBootVersion")
-    testImplementation("org.powermock:powermock-module-junit4:$powermockVersion")
-    testImplementation("org.mockito:mockito-junit-jupiter:$mockitoJunitJupiterVersion")
-    testImplementation("org.powermock:powermock-api-mockito2:$powermockVersion")
+    testCompile("org.springframework.security:spring-security-test")
+    testCompile("org.junit.platform:junit-platform-engine:$junitPlatformVersion")
+    testCompile("org.junit.jupiter:junit-jupiter-params:$junitJupiterVersion")
+    testCompile("org.junit.platform:junit-platform-runner:$junitPlatformVersion")
+    testCompile("org.junit.vintage:junit-vintage-engine:$junitVintageVersion")
+    testCompile("org.junit.jupiter:junit-jupiter-migrationsupport:$junitVintageVersion")
+    compile("org.apache.logging.log4j:log4j-core:$log4j2Version")
+    compile("org.springframework:spring-test:$springBootVersion")
+    compile("org.powermock:powermock-module-junit4:$powermockVersion")
+    compile("org.mockito:mockito-junit-jupiter:$mockitoJunitJupiterVersion")
+    compile("org.powermock:powermock-api-mockito2:$powermockVersion")
 
     // Use JUnit test framework
 }

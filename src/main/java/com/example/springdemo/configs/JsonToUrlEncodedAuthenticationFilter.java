@@ -1,8 +1,10 @@
 package com.example.springdemo.configs;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.apache.catalina.connector.RequestFacade;
+import lombok.SneakyThrows;
+import org.apache.catalina.connector.Request;
 import org.springframework.core.annotation.Order;
+import org.springframework.http.MediaType;
 import org.springframework.security.web.savedrequest.Enumerator;
 import org.springframework.stereotype.Component;
 
@@ -10,30 +12,50 @@ import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequestWrapper;
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.lang.reflect.Field;
 import java.util.*;
 import java.util.stream.Collectors;
 
 @Component
 @Order(value = Integer.MIN_VALUE)
+
 public class JsonToUrlEncodedAuthenticationFilter implements Filter {
 
-    @Override
-    public void init(FilterConfig filterConfig) throws ServletException {
+    private final ObjectMapper mapper;
+
+    public JsonToUrlEncodedAuthenticationFilter(ObjectMapper mapper) {
+        this.mapper = mapper;
     }
 
     @Override
-    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException,
-            ServletException {
+    public void init(FilterConfig filterConfig) {
+    }
 
-        if (Objects.equals(request.getContentType(), "application/json") && Objects.equals(((RequestFacade) request).getServletPath(), "/oauth/token")) {
-            InputStream is = request.getInputStream();
+    @Override
+    @SneakyThrows
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) {
+        Field f = request.getClass().getDeclaredField("request");
+        f.setAccessible(true);
+        Request realRequest = (Request) f.get(request);
+
+       //Request content type without spaces (inner spaces matter)
+       //trim deletes spaces only at the beginning and at the end of the string
+        String contentType = realRequest.getContentType().toLowerCase().chars()
+                .mapToObj(c -> String.valueOf((char) c))
+                .filter(x->!x.equals(" "))
+                .collect(Collectors.joining());
+
+        if ((contentType.equals(MediaType.APPLICATION_JSON_UTF8_VALUE.toLowerCase())||
+                contentType.equals(MediaType.APPLICATION_JSON_VALUE.toLowerCase()))
+                        && Objects.equals((realRequest).getServletPath(), "/oauth/token")) {
+
+            InputStream is = realRequest.getInputStream();
             try (BufferedReader br = new BufferedReader(new InputStreamReader(is), 16384)) {
                 String json = br.lines()
                         .collect(Collectors.joining(System.lineSeparator()));
-                HashMap<String, String> result = new ObjectMapper().readValue(json, HashMap.class);
+                HashMap<String, String> result = mapper.readValue(json, HashMap.class);
                 HashMap<String, String[]> r = new HashMap<>();
 
                 for (String key : result.keySet()) {
@@ -42,7 +64,7 @@ public class JsonToUrlEncodedAuthenticationFilter implements Filter {
                     r.put(key, val);
                 }
                 String[] val = new String[1];
-                val[0] = ((RequestFacade) request).getMethod();
+                val[0] = (realRequest).getMethod();
                 r.put("_method", val);
 
                 HttpServletRequest s = new MyServletRequestWrapper(((HttpServletRequest) request), r);

@@ -32,6 +32,7 @@ public interface UserMapper {
     @Mappings({
             @Mapping(target = "id", ignore = true),
             @Mapping(target = "userInfo.user", ignore = true),
+            @Mapping(target = "roles", ignore = true),
     })
     User userWithInfoDTOtoUser(UserWithInfoDTO userWithInfoDTO);
 
