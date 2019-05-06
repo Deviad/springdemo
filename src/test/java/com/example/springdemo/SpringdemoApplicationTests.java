@@ -18,8 +18,10 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static io.restassured.RestAssured.given;
-
-
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.isEmptyString;
+import static org.hamcrest.core.Is.is;
+import static org.hamcrest.core.IsNot.not;
 
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
@@ -36,7 +38,7 @@ public class SpringdemoApplicationTests {
 
     @Test
     @SneakyThrows
-    public void contextLoads() {
+    public void AJsonToUrlEncodedAuthenticationFilterShouldBeSuccessfulWHenCorrectParamsArePassed() {
 
         Map<String, String> content = Stream.of(new Object[][]{
                 {"grant_type", "password"},
@@ -62,15 +64,18 @@ public class SpringdemoApplicationTests {
 ////                    .andExpect(jsonPath("$[0].name", is("bob")));
 
 
-        given()
-            .port(port)
-            .request()
-            .contentType(ContentType.JSON)
-            .body(json)
+        final String access_token = given()
+                .port(port)
+                .request()
+                .contentType(ContentType.JSON)
+                .body(json)
                 .post("/oauth/token")
                 .then()
-            .assertThat()
-            .statusCode(HttpStatus.OK.value());
+                .assertThat()
+                .statusCode(HttpStatus.OK.value()).extract()
+                .body()
+                .jsonPath().getString("access_token");
+        assertThat(access_token, is(not(isEmptyString())));
     }
 }
 
