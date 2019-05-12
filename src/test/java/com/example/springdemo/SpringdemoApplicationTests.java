@@ -38,7 +38,7 @@ public class SpringdemoApplicationTests {
 
     @Test
     @SneakyThrows
-    public void AJsonToUrlEncodedAuthenticationFilterShouldBeSuccessfulWHenCorrectParamsArePassed() {
+    public void AJsonToUrlEncodedAuthenticationFilterShouldReturnAccessTokenWHenCorrectParamsArePassed() {
 
         Map<String, String> content = Stream.of(new Object[][]{
                 {"grant_type", "password"},

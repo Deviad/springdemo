@@ -42,16 +42,14 @@ plugins {
 
     // Apply the application plugin to add support for building an application
     application
-
     id("idea")
     id("eclipse")
     id("com.gradle.build-scan") version "2.0.2"
     id("org.springframework.boot") version "2.1.4.RELEASE"
     id("io.spring.dependency-management") version "1.0.7.RELEASE"
-    id("net.ltgt.apt") version "0.9"
+    id("net.ltgt.apt") version "0.21"
     id("com.google.cloud.tools.jib") version "1.1.2"
     id("io.freefair.lombok") version "3.2.1"
-
 }
 
 buildscript {
@@ -86,7 +84,8 @@ dependencies {
     annotationProcessor("org.projectlombok:lombok:$lombokVersion")
     api("org.projectlombok:lombok:$lombokVersion")
     implementation("org.mapstruct:mapstruct:$mapstructVersion")
-    implementation("org.mapstruct:mapstruct-processor:$mapstructVersion")
+    annotationProcessor("org.mapstruct:mapstruct-processor:$mapstructVersion")
+    testAnnotationProcessor("org.mapstruct:mapstruct-processor:$mapstructVersion")
     api("org.springframework.boot:spring-boot-devtools:$springBootVersion")
     api("org.apache.commons:commons-lang3:3.8.1")
     api("javax.xml.bind:jaxb-api:2.3.0")
