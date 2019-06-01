@@ -8,13 +8,11 @@ import com.example.springdemo.persistence.repositories.PrivilegeRepository;
 import com.example.springdemo.persistence.repositories.RoleRepository;
 import com.example.springdemo.persistence.repositories.UserInfoRepository;
 import com.example.springdemo.persistence.repositories.UserRepository;
-//import org.springframework.beans.factory.DisposableBean;
-//import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.annotation.Profile;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
 import javax.persistence.EntityNotFoundException;
 import java.util.Arrays;
 import java.util.Collections;
@@ -23,7 +21,7 @@ import java.util.Set;
 
 @Component
 @Profile("!test")
-public class SetupData  {
+public class SetupData implements InitializingBean {
 
     private final UserRepository userRepository;
     private final PrivilegeRepository privilegeRepository;
@@ -43,7 +41,6 @@ public class SetupData  {
         this.encoder = encoder;
     }
 
-    @PostConstruct
     public void init() {
         initPrivileges();
         initRoles();
@@ -151,5 +148,10 @@ public class SetupData  {
             roleRepository.save(role);
         }
         return role;
+    }
+
+    @Override
+    public void afterPropertiesSet() throws Exception {
+        init();
     }
 }

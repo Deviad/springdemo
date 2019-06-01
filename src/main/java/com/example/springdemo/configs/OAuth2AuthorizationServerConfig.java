@@ -1,9 +1,13 @@
 package com.example.springdemo.configs;
 
 import com.example.springdemo.security.CustomUserDetailsService;
+import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.*;
+import org.springframework.core.env.Environment;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
@@ -18,11 +22,14 @@ import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenCo
 import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 @Configuration
 @DependsOn({"authenticationManagerBean"})
 @Import(CustomUserDetailsService.class)
-public class OAuth2AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
+public class OAuth2AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter implements ApplicationContextAware {
+    private ApplicationContext applicationContext;
+    private Environment environment;
     @Autowired
     @Qualifier("authenticationManagerBean")
     private AuthenticationManager authenticationManager;
@@ -53,11 +60,11 @@ public class OAuth2AuthorizationServerConfig extends AuthorizationServerConfigur
 
         clients.inMemory().withClient("sampleClientId").authorizedGrantTypes("implicit").scopes("read", "write", "foo", "bar").autoApprove(false).accessTokenValiditySeconds(3600).redirectUris("http://localhost:8083/")
 
-                .and().withClient(EnvironmentVariables.clientId).secret(passwordEncoder.encode(EnvironmentVariables.clientSecret)).authorizedGrantTypes("password", "authorization_code", "refresh_token").scopes("foo", "read", "write").accessTokenValiditySeconds(3600).resourceIds()
+                .and().withClient(environment.getProperty(EnvVarsEnum.CLIENT_ID.name())).secret(passwordEncoder.encode(environment.getProperty(EnvVarsEnum.CLIENT_SECRET.name()))).authorizedGrantTypes("password", "authorization_code", "refresh_token").scopes("foo", "read", "write").accessTokenValiditySeconds(3600).resourceIds()
                 // 1 hour
                 .refreshTokenValiditySeconds(2592000)
                 // 30 days
-                .redirectUris("xxx","http://"+ EnvironmentVariables.appHostname+":8089/")
+                .redirectUris("xxx", "http://" + environment.getProperty(EnvVarsEnum.APP_HOSTNAME.name()) + ":8089/")
 
                 .and().withClient("barClientIdPassword").secret(passwordEncoder.encode("secret")).authorizedGrantTypes("password", "authorization_code", "refresh_token").scopes("bar", "read", "write").accessTokenValiditySeconds(3600)
                 // 1 hour
@@ -81,10 +88,10 @@ public class OAuth2AuthorizationServerConfig extends AuthorizationServerConfigur
         final TokenEnhancerChain tokenEnhancerChain = new TokenEnhancerChain();
         tokenEnhancerChain.setTokenEnhancers(Arrays.asList(tokenEnhancer(), accessTokenConverter()));
         endpoints
-        .tokenStore(tokenStore())
-        .tokenEnhancer(tokenEnhancerChain)
-        .authenticationManager(authenticationManager)
-        .userDetailsService(userDetailsService);
+                .tokenStore(tokenStore())
+                .tokenEnhancer(tokenEnhancerChain)
+                .authenticationManager(authenticationManager)
+                .userDetailsService(userDetailsService);
     }
 
     @Bean
@@ -95,7 +102,7 @@ public class OAuth2AuthorizationServerConfig extends AuthorizationServerConfigur
     @Bean
     public JwtAccessTokenConverter accessTokenConverter() {
         final JwtAccessTokenConverter converter = new JwtAccessTokenConverter();
-        converter.setSigningKey(EnvironmentVariables.jwtSigningKey);
+        converter.setSigningKey(Objects.requireNonNull(environment.getProperty(EnvVarsEnum.JWT_SIGNING_KEY.name())));
         // final KeyStoreKeyFactory keyStoreKeyFactory = new KeyStoreKeyFactory(new ClassPathResource("mytest.jks"), "mypass".toCharArray());
         // converter.setKeyPair(keyStoreKeyFactory.getKeyPair("mytest"));
         return converter;
@@ -104,5 +111,11 @@ public class OAuth2AuthorizationServerConfig extends AuthorizationServerConfigur
     @Bean
     public TokenEnhancer tokenEnhancer() {
         return new CustomTokenEnhancer();
+    }
+
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        this.applicationContext = applicationContext;
+        environment = applicationContext.getEnvironment();
     }
 }

@@ -1,5 +1,7 @@
 package com.example.springdemo.configs;
 
+
+// this can be replaced by implementing ApplicationContextAware
 public class EnvironmentVariables {
     public static String dbName = System.getenv(EnvVarsEnum.DB_NAME.name());
     public static String dbUserName = System.getenv(EnvVarsEnum.DB_USERNAME.name());
