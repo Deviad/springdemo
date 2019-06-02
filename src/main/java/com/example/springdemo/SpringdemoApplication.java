@@ -11,7 +11,6 @@ import java.util.TimeZone;
 @SpringBootApplication
 @EnableAuthorizationServer
 @EnableWebSecurity
-
 public class SpringdemoApplication {
     @PostConstruct
     void started() {
